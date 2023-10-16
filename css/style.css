@@ -12,6 +12,8 @@
   padding: 0;
   line-height: 1;
 
+  background-color: #b0bfb5;
+
   /* ORIENTATIVO */
   list-style: none;
   border: solid 1px grey;
@@ -39,18 +41,13 @@
 .container {
   border: none;
   padding: 8px 24px;
-
-  background-color: #b0bfb5;
 }
 
 /* Main */
 .main {
   width: 100%;
   height: 97.25vh;
-  @media only screen and (max-width: 600px) {
-    width: 90vw;
-    height: 97.7vh;
-  }
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
