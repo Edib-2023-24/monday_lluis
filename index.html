@@ -34,7 +34,7 @@
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
@@ -43,27 +43,37 @@
     <script src="preloader.js"></script>
   </head>
   <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
-      <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
-      </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
-    </div>
+    <div class="container">
+      <!-- Main -->
 
+      <main class="main">
+        <!-- Banner -->
+        <figure class="main__banner"></figure>
+
+        <!-- Botones -->
+        <nav class="main__capt">
+          <a href="#" class="main__servicios">servicios</a>
+
+          <a href="#" class="main__contactar">contactar</a>
+        </nav>
+
+        <!-- Picture -->
+        <picture class="main__img"></picture>
+
+        <!-- Text -->
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur. Velit nulla ultrices dignissim
+          commodo odio enim dictumst nec maecenas. Risus amet at hac integer.
+          Neque eget.
+        </p>
+
+        <!-- Footer -->
+        <footer>
+          <li class="socials"></li>
+          <li class="socials"></li>
+          <li class="socials"></li>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
