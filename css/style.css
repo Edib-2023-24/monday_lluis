@@ -14,25 +14,26 @@
   line-height: 1;
 
   list-style: none;
+  font-family: "Roboto", sans-serif;
 
   /* ORIENTATIVO */
   border: solid 1px grey;
 
   /* link decoration */
-  & a:link {
+  & a {
+    color: rgb(18, 18, 18);
     text-decoration: none;
+  }
+  & a:link {
     color: rgb(18, 18, 18);
   }
   a:visited {
-    text-decoration: none;
     color: rgb(18, 18, 18);
   }
   a:hover {
-    text-decoration: none;
-    color: rgb(18, 18, 18);
+    color: rgb(232, 205, 205);
   }
   a:active {
-    text-decoration: none;
     color: rgb(18, 18, 18);
   }
 }
@@ -49,16 +50,14 @@ body {
 .container {
   border: none;
 
-  --top-and-bottom-padding: 12px;
-  padding: var(--top-and-bottom-padding) 36px;
+  --top-and-bottom-padding: 1vh;
+  padding: var(--top-and-bottom-padding) 3vh;
 }
 
 /* Main */
 .main {
   width: 100%;
   height: calc(100vh - (var(--top-and-bottom-padding)) * 2);
-
-  
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -83,7 +82,7 @@ body {
     /* Botones servicios/contactar */
     & .main__servicios,
     .main__contactar {
-      padding: 16px 32px;
+      padding: 2vh 3.5vh;
       background-color: var(--accent);
     }
   }
@@ -99,7 +98,7 @@ body {
     grid-column: 1/5;
     grid-row: 6/8;
 
-    padding: 0px 26px;
+    padding: 0px 3vh;
     display: flex;
     align-items: center;
     text-align: left;
@@ -126,8 +125,9 @@ body {
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "Roboto";
+  src: url("../font/robotocondensed-regular-webfont.woff2") format("woff2"),
+    url("../font/robotocondensed-regular-webfont.woff") format("woff");
 }
 
 /* ******************************** */
